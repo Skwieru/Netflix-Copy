@@ -1,0 +1,151 @@
+/* Main settings  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.mainWrapper {
+  background-color: rgb(20, 20, 20);
+  height: 200vh;
+  width: 100%;
+  /* padding: 2vh; */
+  /* font-family: "Bebas Neue", "sans-serif"; */
+  font-family: "Open Sans", sans-serif;
+  /* overflow: hidden; */
+}
+
+/* Header styles  */
+
+header {
+  background-image: url("./img/peakyBlinders.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.headerInterface {
+  display: flex;
+  position: relative;
+  top: 50%;
+  margin-left: 2rem;
+}
+
+.fa-play,
+.fa-circle-info {
+  margin-right: 0.5rem;
+}
+.headerInterface .play,
+.info {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.headerInterface .play {
+  background-color: #fff;
+}
+
+.headerInterface .info {
+  background-color: rgba(134, 127, 127, 0.75);
+  margin-left: 2rem;
+  color: white;
+}
+
+/* NAVIGATION STYLES  */
+
+.topNavigation {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  font-family: "Bebas Neue", cursive;
+  padding: 2vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+}
+.logo {
+  color: red;
+}
+.navSpacer {
+  margin-left: 50%;
+}
+.fa-magnifying-glass {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.userLogo {
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 2.4rem;
+  border-radius: 10%;
+}
+
+.fa-user {
+  color: rgb(26, 138, 212);
+  font-size: 1.4rem;
+}
+
+/* Body content styles  */
+
+.bodyWrapper {
+  padding: 2vh;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  display: none;
+}
+
+h2.sliderTitle {
+  color: #fff;
+  margin: 0.2rem auto;
+}
+
+.slider {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.swiper-slide {
+  margin-right: 0.5rem;
+}
+.sliderImg {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.slider .square {
+  width: 180px;
+  height: 100px;
+  background-image: url("./img/peakyBlinders.jpg");
+  background-size: 100% 100%;
+  margin-right: 0.4rem;
+}
+
+@media (orientation: landscape) {
+  header {
+    height: 80vh;
+  }
+}
