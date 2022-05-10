@@ -24,7 +24,7 @@ a {
 
 .mainWrapper {
   background-color: rgb(20, 20, 20);
-  height: 200vh;
+  /* height: 200vh; */
   width: 100%;
   /* padding: 2vh; */
   /* font-family: "Bebas Neue", "sans-serif"; */
@@ -73,25 +73,51 @@ header {
 /* NAVIGATION STYLES  */
 
 .topNavigation {
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-items: center;
   justify-content: space-between;
   font-family: "Bebas Neue", cursive;
-  padding: 2vh;
-  position: relative;
+  height: 4rem;
+  padding: 0 2vh;
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
 }
 .logo {
   color: red;
 }
-.navSpacer {
-  margin-left: 50%;
-}
-.fa-magnifying-glass {
+
+.browseMenu {
+  display: flex;
+  align-items: center;
+  margin-left: 8%;
   color: white;
-  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.leftSideNavi {
+  display: flex;
+}
+
+.rightSideNavi {
+  display: flex;
+}
+
+.fa-caret-down {
+  font-size: 1.2rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 0.4rem;
+}
+.navSpacer {
+  margin: 1rem;
+}
+.fa-bell {
+  color: white;
+  font-size: 1rem;
 }
 
 .userLogo {
@@ -101,6 +127,10 @@ header {
   text-align: center;
   line-height: 2.4rem;
   border-radius: 10%;
+}
+
+.fa-bell {
+  line-height: 2.4rem;
 }
 
 .fa-user {
@@ -114,9 +144,34 @@ header {
   padding: 2vh;
 }
 
+.bodyWrapper .swiper {
+  padding: 0 4%;
+}
+
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  width: 4%;
+  border-radius: 0.2rem;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 1rem;
+  color: white;
+}
+
+.swiper .swiper-button-prev {
+  left: -3px;
+  /* margin-left: -5px; */
+}
+
+.swiper .swiper-button-next {
+  right: -3px;
 }
 
 h2.sliderTitle {
@@ -124,24 +179,9 @@ h2.sliderTitle {
   margin: 0.2rem auto;
 }
 
-.slider {
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-.swiper-slide {
-  margin-right: 0.5rem;
-}
 .sliderImg {
   width: 100%;
   border-radius: 0.5rem;
-}
-.slider .square {
-  width: 180px;
-  height: 100px;
-  background-image: url("./img/peakyBlinders.jpg");
-  background-size: 100% 100%;
-  margin-right: 0.4rem;
 }
 
 @media (orientation: landscape) {

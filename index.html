@@ -43,10 +43,19 @@
   <div class="mainWrapper">
     <header>
       <nav class="topNavigation">
-        <p class="logo">Netflix</p>
-        <div class="navSpacer"></div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <div class="userLogo"><i class="fa-solid fa-user"></i></div>
+        <div class="leftSideNavi">
+          <p class="logo">Netflix</p>
+          <div class="navSpacer"></div>
+          <a href="#" class="browseMenu"
+            >Browse<i class="fa-solid fa-caret-down"></i
+          ></a>
+        </div>
+
+        <div class="rightSideNavi">
+          <i class="fa fa-bell" aria-hidden="true"></i>
+          <div class="navSpacer"></div>
+          <div class="userLogo"><i class="fa-solid fa-user"></i></div>
+        </div>
       </nav>
       <!-- <nav class="mainNavigation">
           <div class="mainNaviWrapper">
@@ -64,105 +73,234 @@
     </header>
     <body>
       <div class="bodyWrapper">
-        <h2 class="sliderTitle">My List</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ2eejwOmFWqyOd0caBviCBDM1tWDBRunzwQDiD-3eeBNp7Wy-dCxxPsm5zxpuSRyh5E0gZAejeJp20KYnrJZefTBkyGu9etx2k.webp?r=01d"
-              /></a>
+        <!-- My List Slider  -->
+        <section class="slider">
+          <h2 class="sliderTitle">My List</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ2eejwOmFWqyOd0caBviCBDM1tWDBRunzwQDiD-3eeBNp7Wy-dCxxPsm5zxpuSRyh5E0gZAejeJp20KYnrJZefTBkyGu9etx2k.webp?r=01d"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQRN3_GmcTeqiPCanrqYRoOZhY5Chg-hBl-88AMsBXTakVg2F7OnR_qDXhN_pzFIQ_kZYYe2qoAi3KrvstbSOSN80zzW0m8SshWojCMJqeaUYzxw0MhkF5hBRUlVF7Db_igy.jpg?r=93f"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
+                /></a>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQRN3_GmcTeqiPCanrqYRoOZhY5Chg-hBl-88AMsBXTakVg2F7OnR_qDXhN_pzFIQ_kZYYe2qoAi3KrvstbSOSN80zzW0m8SshWojCMJqeaUYzxw0MhkF5hBRUlVF7Db_igy.jpg?r=93f"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
-              /></a>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
+        </section>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <!-- <div class="slider">
-          <div class="square"></div>
-          <div class="square"></div>
-          <div class="square"></div>
-        </div> -->
-        <h2 class="sliderTitle">Continue Watching</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ2eejwOmFWqyOd0caBviCBDM1tWDBRunzwQDiD-3eeBNp7Wy-dCxxPsm5zxpuSRyh5E0gZAejeJp20KYnrJZefTBkyGu9etx2k.webp?r=01d"
-              /></a>
+        <!-- Continue Watching Slider  -->
+        <section class="slider">
+          <h2 class="sliderTitle">Continue Watching</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXlKtac0JxesHy-b023MagVmOeuichiDywjvyL1aF-hWyx7y7TjDz5mlmwT5rQBBTobgK-nqpndHhZBH63KoOKCwv5Q9GVHbqzc.webp?r=145"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
+                /></a>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQRN3_GmcTeqiPCanrqYRoOZhY5Chg-hBl-88AMsBXTakVg2F7OnR_qDXhN_pzFIQ_kZYYe2qoAi3KrvstbSOSN80zzW0m8SshWojCMJqeaUYzxw0MhkF5hBRUlVF7Db_igy.jpg?r=93f"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
-              /></a>
-            </div>
-            <div class="swiper-slide">
-              <a class="sliderElement" href="#"
-                ><img
-                  class="sliderImg"
-                  src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
-              /></a>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
+        </section>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <!-- _______________________ -->
-        <h2 class="sliderTitle">Trending Now</h2>
-        <!-- <div class="slider">
-          <div class="square"></div>
-          <div class="square"></div>
-        </div> -->
+        <!-- Top 10 Slider  -->
+        <section class="slider">
+          <h2 class="sliderTitle">Top 10 TV Shows Today</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSDz2pQsXdW0Iu63QErhuar1kfKj6FmXS6HdSq1cJ048Z8xtLl6rrvHc7Q0WsrkjB9VJnFfKJKi5LEhTVTyjf-IEylFTlLjWrNDwT0XqHDSQwd-_-o3ZEzU5qv00-c-_O2qc7fbqzB0V8Qi4YMFBaGCAHEEfzduPxafGdjJT3vvc7lq6SKFF3wK5SV2wdtE.jpg?r=88f"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSzG5q1THwYpEZHHnYi0or2oz3GbT29jiv2Pf1eMjWOB-xDEcFSdPT_cQYeMAu6Y1xIhlUSVk5bNWBxJE7nctW4B9bZn4K7fuQpxU4xF02Y8sdwDmJykTLSeldM3xc8lA7mjt414fZidZRlScLvhS9P5EFeE1EQ6XHzWsf6oGU5F9DKZkNSQKXgFTblCqfY.jpg?r=e27"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
+                /></a>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <!-- COMEDIES SLIDER  -->
+        <section class="slider">
+          <h2 class="sliderTitle">Comedies</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSDz2pQsXdW0Iu63QErhuar1kfKj6FmXS6HdSq1cJ048Z8xtLl6rrvHc7Q0WsrkjB9VJnFfKJKi5LEhTVTyjf-IEylFTlLjWrNDwT0XqHDSQwd-_-o3ZEzU5qv00-c-_O2qc7fbqzB0V8Qi4YMFBaGCAHEEfzduPxafGdjJT3vvc7lq6SKFF3wK5SV2wdtE.jpg?r=88f"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSzG5q1THwYpEZHHnYi0or2oz3GbT29jiv2Pf1eMjWOB-xDEcFSdPT_cQYeMAu6Y1xIhlUSVk5bNWBxJE7nctW4B9bZn4K7fuQpxU4xF02Y8sdwDmJykTLSeldM3xc8lA7mjt414fZidZRlScLvhS9P5EFeE1EQ6XHzWsf6oGU5F9DKZkNSQKXgFTblCqfY.jpg?r=e27"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <!-- DOCUMENTARIES SLIDER -->
+        <section class="slider">
+          <h2 class="sliderTitle">Documentaries</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXlKtac0JxesHy-b023MagVmOeuichiDywjvyL1aF-hWyx7y7TjDz5mlmwT5rQBBTobgK-nqpndHhZBH63KoOKCwv5Q9GVHbqzc.webp?r=145"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeqr_U4LQZH7l2DmYyTKTd4PkW8iXpz7kn8l2Ph0NmWVUAgFQNSEdA-Nid-7LNukNaBAyJpZ7muXWpxVZmV6G4sufgftIyZZMNFnYnDj5vEXbQIsqKsn-TX3ai4iQ3_SEUK6.jpg?r=2f1"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVada-Thxz0vtjXe6jBTciX0-ouNJIrEnQr97z2SmcHozvdJJX9HkkGS32OiiTDphVJFZR2tDVoiZ2yGURvvj3-rH6VXXOb54AY.webp?r=8ba"
+                /></a>
+              </div>
+              <div class="swiper-slide">
+                <a class="sliderElement" href="#"
+                  ><img
+                    class="sliderImg"
+                    src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb9UCLppRZpdDrVtxjE0PkCB7k3FyqL0XYpERY9Q4E4_S0qW2uHak5RfGmmkw1QXmr_O9GvV8Ia7x3Nf03Tyk0_AIR0FPyMgOKU.webp?r=3f6"
+                /></a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
       </div>
       <script src="script.js"></script>
     </body>
