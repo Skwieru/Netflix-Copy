@@ -24,7 +24,7 @@ a {
 
 .mainWrapper {
   background-color: rgb(20, 20, 20);
-  /* height: 200vh; */
+  height: 200vh;
   width: 100%;
   /* padding: 2vh; */
   /* font-family: "Bebas Neue", "sans-serif"; */
@@ -38,13 +38,14 @@ header {
   background-image: url("./img/peakyBlinders.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 35vh;
+  left: 0;
 }
 
 .headerInterface {
   display: flex;
   position: relative;
-  top: 50%;
+  top: 60%;
   margin-left: 2rem;
 }
 
@@ -73,7 +74,7 @@ header {
 /* NAVIGATION STYLES  */
 
 .topNavigation {
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -83,6 +84,13 @@ header {
   padding: 0 2vh;
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
+  transition: 0.5s;
+}
+
+.topNavigation.active {
+  /* position: fixed; */
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
 }
 .logo {
   color: red;
@@ -91,7 +99,7 @@ header {
 .browseMenu {
   display: flex;
   align-items: center;
-  margin-left: 8%;
+  margin-left: 2rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
@@ -131,11 +139,51 @@ header {
 
 .fa-bell {
   line-height: 2.4rem;
+  margin-right: 2rem;
 }
 
 .fa-user {
   color: rgb(26, 138, 212);
   font-size: 1.4rem;
+}
+
+/* Browse Open Navigation  */
+
+.browseActive {
+  position: fixed;
+  z-index: 20;
+  top: 6rem;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 2px solid rgb(212, 211, 211);
+  visibility: hidden;
+}
+
+.browseActive.displayed {
+  visibility: visible;
+}
+.browseActive .browseActive .fa-caret-down {
+  color: white;
+  transform: rotate(180deg);
+  margin-top: -1.4rem;
+  font-size: 1.6rem;
+}
+
+.browseActive .browseItem {
+  width: 100%;
+  padding: 1.4rem 0;
+}
+
+.browseActive .browseItem a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  display: block;
+  text-align: center;
+  color: rgb(179, 179, 179);
 }
 
 /* Body content styles  */
