@@ -12,6 +12,11 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    500: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 // Getting Elements
@@ -19,6 +24,10 @@ const swiper = new Swiper(".swiper", {
 const logo = document.querySelector(".logo");
 const topNav = document.querySelector(".topNavigation");
 const browseButton = document.querySelector(".browseMenu");
+const browseLayout = document.querySelector(".browseActive");
+const browseHome = document.querySelector(
+  ".browseActive .browseItem:first-child a"
+);
 
 // Functionality
 
@@ -41,5 +50,13 @@ logo.addEventListener("click", () => {
 // handling browse menu
 
 browseButton.addEventListener("click", () => {
-  browseButton.classList.toggle("displayed");
+  browseLayout.classList.toggle("displayed");
+});
+
+browseLayout.addEventListener("click", () => {
+  browseLayout.classList.remove("displayed");
+});
+
+browseHome.addEventListener("click", () => {
+  window.scrollTo(0, 0);
 });

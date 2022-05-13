@@ -24,7 +24,7 @@ a {
 
 .mainWrapper {
   background-color: rgb(20, 20, 20);
-  height: 200vh;
+  /* height: 200vh; */
   width: 100%;
   /* padding: 2vh; */
   /* font-family: "Bebas Neue", "sans-serif"; */
@@ -166,7 +166,7 @@ header {
 .browseActive.displayed {
   visibility: visible;
 }
-.browseActive .browseActive .fa-caret-down {
+.browseActive .fa-caret-down {
   color: white;
   transform: rotate(180deg);
   margin-top: -1.4rem;
@@ -176,6 +176,7 @@ header {
 .browseActive .browseItem {
   width: 100%;
   padding: 1.4rem 0;
+  list-style: none;
 }
 
 .browseActive .browseItem a {
@@ -186,6 +187,37 @@ header {
   color: rgb(179, 179, 179);
 }
 
+/* bell menu  */
+
+.notificationActive {
+  position: fixed;
+  z-index: 20;
+  top: 6rem;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 2px solid rgb(212, 211, 211);
+  /* visibility: hidden; */
+}
+
+.notificationActive .fa-caret-down {
+  position: relative;
+  right: 0;
+  top: 0;
+  color: white;
+  transform: rotate(180deg);
+  margin-top: -1.4rem;
+  font-size: 1.6rem;
+}
+
+.notificationActive .newArrival {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
 /* Body content styles  */
 
 .bodyWrapper {
@@ -232,8 +264,56 @@ h2.sliderTitle {
   border-radius: 0.5rem;
 }
 
-@media (orientation: landscape) {
+@media (min-width: 480px) and (min-height: 320px) {
+  /* main styles  */
+
+  /* Header styles  */
   header {
     height: 80vh;
+  }
+  .fa-play,
+  .fa-circle-info {
+    margin-right: 0.5rem;
+  }
+  .headerInterface .play,
+  .info {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border: none;
+  }
+  .topNavigation {
+    padding: 0 4vw;
+  }
+
+  /* Navigation Styles  */
+  .logo {
+    font-size: 2.4rem;
+  }
+  .fa-bell {
+    color: white;
+    font-size: 1.6rem;
+  }
+  .userLogo {
+    height: 2.8rem;
+    width: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .fa-user {
+    font-size: 1.8rem;
+  }
+
+  .browseMenu {
+    font-size: 1.2rem;
+  }
+  /* Browse Open Navigation  */
+  .browseActive {
+    width: 45vw;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 360px) {
+  header {
+    height: 100vh;
   }
 }
