@@ -38,6 +38,9 @@ const browseLayout = document.querySelector(".browseActive");
 const browseHome = document.querySelector(
   ".browseActive .browseItem:first-child a"
 );
+const topNaviButtons = document.querySelectorAll(".browseActive .browseItem a");
+
+console.log(topNaviButtons);
 
 // Functionality
 
@@ -56,6 +59,14 @@ document.addEventListener("scroll", () => {
 logo.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+// handling activeButton class switch
+topNaviButtons.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    topNaviButtons.forEach((el) => el.classList.remove("active"));
+    btn.classList.add("active");
+  })
+);
 
 // handling browse menu
 
