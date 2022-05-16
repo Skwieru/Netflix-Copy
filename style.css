@@ -46,7 +46,7 @@ header {
   display: flex;
   position: relative;
   top: 60%;
-  margin-left: 2vw;
+  margin-left: 2vh;
 }
 
 .fa-play,
@@ -56,8 +56,10 @@ header {
 .headerInterface .play,
 .info {
   display: block;
+  font-size: 1rem;
+  font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   border: none;
 }
 
@@ -67,7 +69,7 @@ header {
 
 .headerInterface .info {
   background-color: rgba(134, 127, 127, 0.75);
-  margin-left: 2rem;
+  margin-left: 2vw;
   color: white;
 }
 
@@ -94,6 +96,7 @@ header {
 }
 .logo {
   color: red;
+  font-size: 1.8rem;
 }
 
 .browseMenu {
@@ -102,7 +105,7 @@ header {
   margin-left: 2rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -125,7 +128,7 @@ header {
 }
 .fa-bell {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .userLogo {
@@ -145,6 +148,7 @@ header {
 .fa-user {
   color: rgb(26, 138, 212);
   font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 /* Browse Open Navigation  */
@@ -267,6 +271,7 @@ header {
 h2.sliderTitle {
   color: #fff;
   margin: 0.2rem auto;
+  margin-left: 4vw;
 }
 
 .sliderImg {
@@ -276,13 +281,13 @@ h2.sliderTitle {
 
 /* Media Queries from the smallest size  */
 
-@media screen and (min-height: 375px) {
+/* @media screen and (min-width: 375px) {
   html {
     font-size: 14px;
   }
 }
 
-@media screen and (min-height: 768px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 16px;
   }
@@ -301,19 +306,27 @@ h2.sliderTitle {
   }
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-width: 1024px) {
   html {
     font-size: 24px;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  header {
+    height: 80vh;
+  }
+} */
+
 /* media queries for landscape  */
-/* (min-width: 480px) and  */
+
+@media (min-height: 280px) and (orientation: landscape) {
+  header {
+    height: 100vh;
+  }
+}
 
 @media (min-height: 320px) and (orientation: landscape) {
-  /* main styles  */
-
-  /* Header styles  */
   header {
     height: 80vh;
   }
@@ -321,11 +334,16 @@ h2.sliderTitle {
   .fa-circle-info {
     margin-right: 0.5rem;
   }
+
+  .headerInterface {
+    top: 70%;
+    margin-left: 4vw;
+  }
   .headerInterface .play,
   .info {
-    display: block;
-    padding: 1rem 1.5rem;
-    font-size: 1.6rem;
+    /* display: block; */
+    padding: 0.4rem 1rem;
+    /* font-size: 1.4rem; */
     border: none;
   }
   .topNavigation {
@@ -334,23 +352,22 @@ h2.sliderTitle {
 
   /* Navigation Styles  */
   .logo {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .fa-bell {
-    color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .userLogo {
-    height: 2.8rem;
-    width: 2.8rem;
-    line-height: 2.8rem;
+    height: 2rem;
+    width: 2rem;
   }
   .fa-user {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .browseMenu {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   /* Browse Open Navigation  */
   .browseActive {
@@ -358,13 +375,74 @@ h2.sliderTitle {
   }
 }
 
-@media (min-width: 800px) and (min-height: 360px) and (orientation: landscape) {
+@media (min-height: 360px) and (orientation: landscape) {
   header {
-    height: 100vh;
+    height: 80vh;
+  }
+  .headerInterface .play,
+  .info {
+    /* display: block; */
+    padding: 0.6rem 1.4rem;
+    font-size: 1.2rem;
+    border: none;
   }
 }
 
-@media (min-width: 1024px) and (min-height: 600px) and (orientation: landscape) {
+@media (min-height: 390px) and (orientation: landscape) {
+  header {
+    height: 95vh;
+  }
+}
+/* @media (min-width: 1024px) and (min-height: 600px) and (orientation: landscape) {
+  html {
+    font-size: 1rem;
+  }
+  header {
+    height: 60vh;
+  }
+} */
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (min-width: 390px) {
+  html {
+    font-size: 14px;
+  }
+} */
+
+@media screen and (min-width: 768px) and (min-height: 768px) {
+  html {
+    font-size: 16px;
+  }
+  header {
+    height: 35vh;
+  }
+  .headerInterface {
+    margin-left: 2vw;
+  }
+  .headerInterface .play,
+  .info {
+    padding: 0.5rem 1.5rem;
+  }
+  .headerInterface .info {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+  header {
+    height: 65vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   header {
     height: 80vh;
   }
