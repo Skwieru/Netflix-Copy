@@ -46,7 +46,7 @@ header {
   display: flex;
   position: relative;
   top: 60%;
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 .fa-play,
@@ -187,7 +187,7 @@ header {
   color: rgb(179, 179, 179);
 }
 
-/* bell menu  */
+/* notification menu  */
 
 .notificationActive {
   position: fixed;
@@ -197,7 +197,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.9);
   border-top: 2px solid rgb(212, 211, 211);
   /* visibility: hidden; */
@@ -205,7 +205,7 @@ header {
 
 .notificationActive .fa-caret-down {
   position: relative;
-  right: 0;
+  left: 35vw;
   top: 0;
   color: white;
   transform: rotate(180deg);
@@ -217,6 +217,16 @@ header {
   display: flex;
   flex-direction: column;
   color: white;
+  width: 100%;
+  border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+.notificationActive ul {
+  width: 100%;
+}
+
+.notificationActive .newArrival .notificationText {
+  padding-left: 2rem;
 }
 /* Body content styles  */
 
@@ -264,7 +274,43 @@ h2.sliderTitle {
   border-radius: 0.5rem;
 }
 
-@media (min-width: 480px) and (min-height: 320px) {
+/* Media Queries from the smallest size  */
+
+@media screen and (min-height: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  html {
+    font-size: 16px;
+  }
+  header {
+    height: 35vh;
+  }
+  .headerInterface {
+    margin-left: 2vw;
+  }
+  .headerInterface .play,
+  .info {
+    padding: 0.5rem 1.5rem;
+  }
+  .headerInterface .info {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+/* media queries for landscape  */
+/* (min-width: 480px) and  */
+
+@media (min-height: 320px) and (orientation: landscape) {
   /* main styles  */
 
   /* Header styles  */
@@ -312,8 +358,14 @@ h2.sliderTitle {
   }
 }
 
-@media (min-width: 800px) and (min-height: 360px) {
+@media (min-width: 800px) and (min-height: 360px) and (orientation: landscape) {
   header {
     height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 600px) and (orientation: landscape) {
+  header {
+    height: 80vh;
   }
 }

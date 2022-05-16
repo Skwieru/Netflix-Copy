@@ -15,6 +15,16 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     500: {
       slidesPerView: 3,
+      loopAdditionalSlides: 3,
+    },
+
+    1024: {
+      slidesPerView: 4,
+      loopAdditionalSlides: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+      loopAdditionalSlides: 5,
     },
   },
 });
