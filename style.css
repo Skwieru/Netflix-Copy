@@ -63,6 +63,11 @@ header {
   border: none;
 }
 
+.headerInterface .play,
+.info:hover {
+  cursor: pointer;
+}
+
 .headerInterface .play {
   background-color: #fff;
 }
@@ -278,6 +283,60 @@ h2.sliderTitle {
   border-radius: 0.5rem;
 }
 
+/* Footer styles  */
+
+footer {
+  margin-top: 10vh;
+}
+
+footer .footerWrapper {
+  padding: 2vh;
+}
+
+footer .footerWrapper .icons {
+  display: flex;
+  color: white;
+  font-size: 2.2rem;
+  margin-left: 4vw;
+}
+
+footer .footerWrapper .icons i {
+  margin-right: 10vw;
+  margin-bottom: 4vw;
+}
+
+footer .footerElements {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+footer .footerElements li {
+  display: flex;
+  flex: 0 0 50%;
+  margin-bottom: 1.6rem;
+}
+
+footer .footerElements li a {
+  color: rgb(141, 141, 141);
+  font-size: 1rem;
+}
+
+footer .serviceCode {
+  background-color: transparent;
+  color: rgb(141, 141, 141);
+  padding: 0.7rem;
+  border: 1px solid rgb(141, 141, 141);
+}
+
+footer .copyrights {
+  margin-top: 3vw;
+  color: rgb(141, 141, 141);
+}
+
+footer .copyrights p {
+  font-size: 0.8rem;
+}
 /* Media Queries from the smallest size  */
 
 /* media queries for landscape  */
@@ -286,9 +345,12 @@ h2.sliderTitle {
   header {
     height: 100vh;
   }
+  footer .footerWrapper {
+    padding: 4vw;
+  }
 }
 
-@media (min-height: 320px) and (orientation: landscape) {
+@media screen and (min-height: 320px) and (orientation: landscape) {
   header {
     height: 80vh;
   }
@@ -337,7 +399,7 @@ h2.sliderTitle {
   }
 }
 
-@media (min-height: 360px) and (orientation: landscape) {
+@media screen and (min-height: 360px) and (orientation: landscape) {
   header {
     height: 80vh;
   }
@@ -348,7 +410,7 @@ h2.sliderTitle {
   }
 }
 
-@media (min-height: 390px) and (orientation: landscape) {
+@media screen and (min-height: 390px) and (orientation: landscape) {
   header {
     height: 95vh;
   }
@@ -372,16 +434,22 @@ h2.sliderTitle {
   }
   .headerInterface .play,
   .info {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.6rem;
   }
   .headerInterface .info {
     margin-left: 2vw;
   }
 }
 
+@media screen and (min-width: 768px) {
+  footer .footerElements li {
+    flex-basis: 25%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
   header {
     height: 65vh;
@@ -415,16 +483,16 @@ h2.sliderTitle {
 
   .browseActive .browseItem {
     width: auto;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .browseActive .browseItem:nth-child(1) {
     width: auto;
-    padding-left: 4vw;
+    padding-left: 2vw;
   }
 
   .browseActive .browseItem a {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: block;
     text-align: auto;
     color: rgb(212, 212, 212);
@@ -438,11 +506,11 @@ h2.sliderTitle {
 
 @media screen and (min-width: 1920px) {
   header {
-    height: 80vh;
+    height: 100vh;
   }
 
   .headerInterface {
-    top: 80%;
+    top: 70%;
   }
   .headerInterface .play,
   .info {
