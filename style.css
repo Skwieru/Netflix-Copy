@@ -291,18 +291,23 @@ footer {
 
 footer .footerWrapper {
   padding: 2vh;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 footer .footerWrapper .icons {
   display: flex;
   color: white;
-  font-size: 2.2rem;
-  margin-left: 4vw;
+  margin-left: 1rem;
 }
 
-footer .footerWrapper .icons i {
-  margin-right: 10vw;
-  margin-bottom: 4vw;
+footer .footerWrapper .icons a {
+  width: 30px;
+  height: 30px;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 22px;
 }
 
 footer .footerElements {
@@ -319,7 +324,11 @@ footer .footerElements li {
 
 footer .footerElements li a {
   color: rgb(141, 141, 141);
-  font-size: 1rem;
+  font-size: 13px;
+}
+
+footer .footerElements li a:hover {
+  text-decoration: underline;
 }
 
 footer .serviceCode {
