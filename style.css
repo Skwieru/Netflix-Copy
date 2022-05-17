@@ -509,6 +509,7 @@ footer .copyrights p {
 
   .browseActive .browseItem a.active {
     color: white;
+    cursor: default;
     text-shadow: 0px 1px white;
   }
 }
