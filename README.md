@@ -1,4 +1,6 @@
-# Netflix-Copy
+# Netflix-Copy 
+
+### Technologies: HTML, CSS, Javascript
 
 This is my copy of netflix.
 I was not looking at that how layout is builded in developer tools so few things probably are different than in original. 
