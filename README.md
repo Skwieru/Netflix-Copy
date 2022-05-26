@@ -1,5 +1,9 @@
 # Netflix-Copy 
 
+!["netflixCopyImage"](https://github.com/Skwieru/Netflix-Copy/blob/master/netflixImage.png?raw=true)
+
+
+
 ### Technologies: HTML, CSS, Javascript
 
 This is my copy of netflix.
